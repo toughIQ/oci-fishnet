@@ -1,4 +1,4 @@
-FROM docker.io/alpine:latest
+FROM docker.io/rockylinux:latest
 LABEL maintainer="toughIQ@gmail.com"
 
 RUN mkdir /fishnet && \
