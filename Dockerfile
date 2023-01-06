@@ -20,3 +20,5 @@ RUN chgrp -R 0 /fishnet && \
 USER fishnet
     
 CMD ["./fishnet","--auto-update"]
+
+ENV CORES="1"
