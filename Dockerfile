@@ -1,5 +1,8 @@
-FROM docker.io/rockylinux:9
+FROM docker.io/rockylinux:9-minimal
 LABEL maintainer="toughIQ@gmail.com"
+
+RUN microdnf upgrade -y && \
+    microdnf install wget -y
 
 RUN mkdir /fishnet && \
     useradd -r -s /bin/bash -g root -G root -u 1000 fishnet
